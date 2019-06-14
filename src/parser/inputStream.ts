@@ -1,5 +1,8 @@
+// Input Stream as defined in http://lisperator.net/pltut/parser/input-stream
+// This stage will take the input string and make it easier for us to consume it character by character
+
 /** Creates an input stream that provides methods to read the input string */
-export default function createInputStream(input: string) {
+export function createInputStream(input: string) {
   /** Current position on the stream */
   let position = 0;
   /** Current line */
